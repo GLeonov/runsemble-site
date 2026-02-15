@@ -28,7 +28,7 @@
     var colors = [
       { r: 74, g: 115, b: 213 },   // accent blue
       { r: 125, g: 89, b: 210 },    // purple
-      { r: 217, g: 85, b: 133 },    // pink
+      { r: 204, g: 77, b: 153 },    // pink
       { r: 40, g: 60, b: 140 }      // deep navy-blue
     ];
 
@@ -49,7 +49,7 @@
 
     // Data particles
     var particles = [];
-    var particleLabels = ['5:40', '4:55', '12km', '8km', '165', '142', '10K', 'HM', '6:10', '3:45'];
+    var particleLabels = ['5K - 24:10', '5K - 30:20', '5K - 18:45', '10K - 45:20', '10K - 52:08', '10K - 1:02:30', 'HM - 1:45:12', 'HM - 2:05:33', 'HM - 1:32:08', 'M - 3:15:40', 'M - 4:02:18', 'M - 3:45:55', '5K - 27:45', '10K - 1:20:56', 'HM - 1:55:20'];
     for (var j = 0; j < 18; j++) {
       particles.push({
         x: Math.random() * w,
@@ -58,7 +58,7 @@
         vx: (Math.random() - 0.5) * 0.1,
         opacity: 0.06 + Math.random() * 0.14,
         label: particleLabels[j % particleLabels.length],
-        size: 10 + Math.random() * 4,
+        size: 13 + Math.random() * 5,
         phase: Math.random() * Math.PI * 2
       });
     }
@@ -100,7 +100,7 @@
       }
 
       // Draw particles
-      ctx.font = '500 ' + 12 + 'px -apple-system, system-ui, sans-serif';
+      ctx.font = '500 ' + 15 + 'px -apple-system, system-ui, sans-serif';
       ctx.textAlign = 'center';
 
       for (var k = 0; k < particles.length; k++) {
